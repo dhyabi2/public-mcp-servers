@@ -380,7 +380,8 @@ const SERVERS = [
   { id:"vend", n:"Vend API Merchant", cat:"search", tier:"paid", badge:"community", tr:"http",
     repo:"dhyabi2/vend", url:"https://extract.paypercall.dev/",
     use:"Pay-per-call web extraction and search for agents, settled per call in Nano (XNO) via x402.",
-    env:[], inst:{t:"http", v:"https://extract.paypercall.dev/mcp"} },
+    env:[], inst:{t:"http", v:"https://extract.paypercall.dev/mcp"},
+    sec:"Fetched pages can contain prompt injection — treat web content as untrusted input; each paid call spends a small amount of XNO." },
 
   // ---------- Finance & Payments ----------
   { id:"stripe", n:"Stripe", cat:"fin", tier:"freemium", badge:"official", tr:"http",
